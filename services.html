@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services | Mars Space Interiors</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'Deradioh';
+            src: url('./font/Deradioh.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'EurostileBQ';
+            src: url('./font/EurostileBQ-Extended.otf') format('opentype');
+        }
+        body {
+            font-family: 'Deradioh' !important;
+        }
+        p{
+            font-family: 'EurostileBQ' !important;
+        }
+        #main {
+            background-image: url('./images/servicesPageBG.png'); /* Replace with your actual image */
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+            margin-top: 0;
+        }
+        #logo {
+            width: 80px !important;
+            margin-top: -25px !important;
+        }
+        #btn {
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+         a>span{
+            font-size: 25px;
+        }
+        #What {
+            background-image: url('./images/ServicesInteriorFitoutBG.png'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #Partners {
+            background-image: url('./images/ServicespageFromscratchBG.png'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+        }
+        #Projects {
+            background-image: url('./images/projectbg.png'); /* Replace with your actual image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        #projectFg {
+            width: 900px;
+            height: 900px;
+            object-fit: cover;
+        }
+        #sub {
+            background-image: url('./images/subiusdiary.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            height: 20vh;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease;
+        }
+
+        #sub:hover {
+            filter: grayscale(0%);
+        }
+        #Jack {
+            background-image: url('./images/JACKADVERBG.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            height: 80vh;
+        }
+        #jackFg {
+            width: 800px;
+            height: 700px;
+            object-fit: cover;
+            margin-top: -150px;
+        }
+        footer {
+            background-image: url('./images/footer.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            /* height: 40vh; Reduced height */
+            background-size: 100% 100%; /* Reduced width */
+            height: 100vh;
+        }
+        .text {
+            transform: translateX(-50%);
+            font-weight: bold;
+            /* color: #ffb400; */
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .text:hover {
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+        .text:hover::before {
+            content: "[";
+            transition: all 0.3s ease-in-out;
+            margin-right: 10px;
+        }
+        .text:hover::after {
+            content: "]";
+            transition: all 0.3s ease-in-out;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body class="text-white font-sans">
+    <div id="main">
+        <header class="flex justify-center items-center p-6 absolute w-full mt-8">
+            <nav>
+                <ul class="flex space-x-24">
+                    <li><a href="/">
+                        <span class="text">
+                            Home
+                        </span>
+                    </a></li>
+                    <li><a href="/services.html">
+                        <span class="text">
+                            Services
+                        </span>
+                    </a></li>
+                    <li><a href="/project.html">
+                        <span class="text">
+                            Projects
+                        </span>
+                    </a></li>
+                    <img id="logo" src="./images/logo.png" alt="">
+                    <li><a href="#">
+                        <span class="text">
+                            Collaboration
+                        </span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="text">
+                            Products
+                        </span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="text">
+                            RU
+                        </span>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <section class="flex justify-center items-center h-screen">
+                <div class="flex flex-1 flex-col items-start p-8 mt-[150px] ml-[100px]">
+                    <h2 class="text-4xl font-light">INTERIOR DESIGN</h2>
+                    <h4 class="text-2xl text-center mt-8 mb-4 bg-black bg-opacity-50 w-[250px]">CONCEPT DESIGN</h4>
+                    <p>Indulge in the elegance of our bespoke interior</p>
+                    <p>design services, tailored to elevate your space</p>
+                    <h4 class="text-2xl text-center mt-8 mb-4 bg-black bg-opacity-50 w-[250px]">SCHEMTIC DESIGN</h4>
+                    <p>Indulge in the elegance of our bespoke interior</p>
+                    <p>design services, tailored to elevate your space</p>
+                    <h4 class="text-2xl text-center mt-8 mb-4 bg-black bg-opacity-50 w-[250px]">3D VISUALIZATION</h4>
+                    <p>Indulge in the elegance of our bespoke interior</p>
+                    <p>design services, tailored to elevate your space</p>
+                </div>
+                <div class="flex-1 h-screen mt-[250px]">
+                    <img src="./images/ServicesPageFG.png" alt="What We Do" class="w-[3500px] h-[600px] object-cover">
+                </div>
+            </section>
+        </div>
+        
+        
+    </div>
+    <div id="What">
+        <section class="flex justify-center items-center h-screen">
+            <div class="flex flex-1 flex-col items-start p-8 ml-[100px]">
+            <h2 class="text-4xl font-light">INTERIOR FITOUT</h2>
+            <p class="max-w-md mt-4 text-lg text-justify">Experience the pinnacle of craftsmanship and</p>
+            <p class="max-w-md text-lg text-justify">sophistication with our bespoke interior fit-out services,</p>
+            <p class="max-w-md text-lg text-justify">crafted to enhance retail businesses and other spaces</p>
+            <button id="btn" class="mt-6 px-6 py-3 w-[250px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg">
+                SCHEDULE A CALL
+            </button>
+            </div>
+            <div class="flex-1 h-screen">
+                <img src="./images/ServicespageInteriorFitoutFG.png" alt="What We Do" class="w-[3500px] h-full object-cover">
+            </div>
+        </section>
+    </div>
+    <div id="Partners">
+        <section class="flex justify-center items-center h-screen">
+            <div class="flex flex-1 flex-col items-start p-8 ml-[100px]">
+                <h2 class="text-4xl font-light">HOW WE BUILD FROM</h2>
+                <h2 class="text-4xl font-light">SCRATCH TO DELHIVERY</h2>
+                <p class="max-w-md mt-4 text-lg">This end-to-end process ensures that Mars Space Interior</p>
+                <p class="max-w-md text-lg">delivers the high-quality construction projects that meet client</p>
+                <p class="max-w-md text-lg"> expectations and comply with UAE regulations.</p>
+                <button id="btn" class="mt-6 px-6 py-3 w-[200px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg">
+                    SCHDULE A CALL
+                </button>
+            </div>
+            <div class="flex-1">
+                <img src="./images/ServicespageFromscratchFG.png" alt="Partners" class="w-[3500px] h-[700px] object-cover">
+            </div>
+        </section>
+    </div>
+
+    <footer class="justify-center items-center h-screen bg-black text-white">
+        <div class="grid grid-cols-5 gap-4 p-8 text-center">
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2">PHONE</h3>
+                <ul>
+                    <li><a href="#">+971589653760</a></li>
+                </ul>
+            </div>
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2">E-MAIL</h3>
+                <ul>
+                    <li><a href="#">info@marsspace.ae</a></li>
+                </ul>
+            </div>
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2 text-justify">LOCATION</h3>
+                <ul>
+                    <li>
+                        <p class="text-justify">GF-24, AL Safiya building, <br> Dubai, UAE</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2 text-justify">SERVICES</h3>
+                <ul>
+                    <li><a href="#"><p class="text-justify">FIT-OUT Contractor</p></a></li>
+                    <li><a href="#"><p class="text-justify">Interior Design</p></a></li>
+                    <li><a href="#"><p class="text-justify">Construction Contract</p></a></li>
+                </ul>
+                <div class="mt-[50px]">
+                    <h3 class="text-xl font-semibold mb-2 text-justify">PRODUCT</h3>
+                    <ul>
+                        <li><a href="#"><p class="text-justify">Branding</p></a></li>
+                        <li><a href="#"><p class="text-justify">Packging Design</p></a></li>
+                        <li><a href="#"><p class="text-justify">3D Visualization</p></a></li>
+                        <li><a href="#"><p class="text-justify">Animation</p></a></li>
+                        <li><a href="#"><p class="text-justify">More</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2">GET SOCIAL</h3>
+                <ul class="flex justify-center space-x-4">
+                    <li><a href="#"><img src="./images/instagram.png" alt="" class="w-8"></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="" class="w-8"></a></li>
+                    <li><a href="#"><img src="./images/whatsapp.png" alt="" class="w-8"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | Mars Space Interiors</title>
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        @font-face {
+            font-family: 'Deradioh';
+            src: url('./font/Deradioh.otf') format('opentype');
+        }
+        @font-face {
+            font-family: 'EurostileBQ';
+            src: url('./font/EurostileBQ-Extended.otf') format('opentype');
+        }
+        body {
+            font-family: 'Deradioh' !important;
+            /* background-image: url('./images/PROJECT.jpg'); */
+            background-image: url('./images/projectsectionBACKGROUND.png');
+            background-size: cover;
+            /* background-attachment: fixed; */
+            background-position: top;
+            background-repeat: no-repeat;
+        }
+        p{
+            font-family: 'EurostileBQ' !important;
+        }
+        /* #main {
+            background-image: url('./images/servicesPageBG.png'); Replace with your actual image
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: top;
+            background-repeat: no-repeat;
+            margin-top: 0;
+        } */
+        #logo {
+            width: 80px !important;
+            margin-top: -25px !important;
+        }
+        #btn {
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+        }
+         a>span{
+            font-size: 25px;
+        }
+        #textForD{
+            font-family: 'Deradioh' !important;
+            font-size: 26;
+            font-weight: 100;
+        }
+        /* #What {
+            background-image: url('./images/ServicesInteriorFitoutBG.png'); Replace with your actual image
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+        /* #Partners {
+            background-image: url('./images/ServicespageFromscratchBG.png'); Replace with your actual image
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+        } */
+        /* #Projects {
+            background-image: url('./images/projectbg.png'); Replace with your actual image
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        } */
+        #projectFg {
+            width: 900px;
+            height: 900px;
+            object-fit: cover;
+        }
+        footer {
+            background-image: url('./images/footer.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #000000;
+            /* height: 40vh; Reduced height */
+            background-size: 100% 100%; /* Reduced width */
+            height: 100vh;
+        }
+        .text {
+            /* transform: translateX(-50%); */
+            font-weight: bold;
+            /* color: #ffb400; */
+            transition: all 0.3s ease-in-out;
+            cursor: pointer;
+        }
+        .text:hover {
+            text-shadow: 0 0 10px #ffb400, 0 0 20px #ffb400;
+        }
+        .text:hover::before {
+            content: "[";
+            transition: all 0.3s ease-in-out;
+            margin-right: 10px;
+        }
+        .text:hover::after {
+            content: "]";
+            transition: all 0.3s ease-in-out;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body class="text-white font-sans">
+    <div id="main">
+        <header class="flex justify-center items-center p-6 absolute w-full mt-8">
+            <nav>
+                <ul class="flex space-x-24">
+                    <li><a href="/">
+                        <span class="text" id="textForD">
+                            Home
+                        </span>
+                    </a></li>
+                    <li><a href="/services.html">
+                        <span class="text" id="textForD">
+                            Services
+                        </span>
+                    </a></li>
+                    <li><a href="/project.html">
+                        <span class="text" id="textForD">
+                            Projects
+                        </span>
+                    </a></li>
+                    <img id="logo" src="./images/logo.png" alt="">
+                    <li><a href="#">
+                        <span class="text" id="textForD">
+                            Collaboration
+                        </span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="text" id="textForD">
+                            Products
+                        </span>
+                    </a></li>
+                    <li><a href="#">
+                        <span class="text" id="textForD">
+                            RU
+                        </span>
+                    </a></li>
+                </ul>
+            </nav>
+        </header>
+        <div>
+            <section class="flex justify-center items-center h-screen">
+                <div class="flex flex-1 flex-col items-start p-8 mt-[150px] ml-[100px]">
+                    <h2 class="text-4xl font-light">SOME WHO</h2>
+                    <h2 class="text-4xl font-light">BUILD BEYOND</h2>
+                    <p class="max-w-md mt-4 text-lg text-justify">"Building a home isn't just about having money, it's about having vision, taste, and the courage to step beyond ordinary-do you have what it takes"</p>
+                    <button id="btn" class="mt-6 px-6 py-3 w-[250px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg">
+                        SCHEDULE A CALL
+                    </button>
+                </div>
+                <div class="flex-1 h-screen mt-[250px]">
+                    <img src="./images/01ForegroundImage.png" alt="What We Do" class="w-[600px] h-[500px] object-cover mr-[500px] mt-[100px]">
+                </div>
+            </section>
+        </div>
+    </div>
+    <div class="grid grid-cols-4 gap-4 p-8 ml-[50px] mt-[100px] mr-[50px]">
+        <div class="col-span-1">
+            <img src="./images/RESIENTAL.png" alt="">
+            <p class="mt-[40px] text-center text">RESIDENTIAL</p>
+        </div>
+        <div class="col-span-1">
+            <img src="./images/COPRATE.png" alt="">
+            <p class="mt-[40px] text-center text">CORPORATE</p>
+        </div>
+        <div class="col-span-1">
+            <img src="./images/Hosiptality.png" alt="">
+            <p class="mt-[40px] text-center text">HOSPITALITY</p>
+        </div>
+        <div class="col-span-1">
+            <img src="./images/Reatail.png" alt="">
+            <p class="mt-[40px] text-center text">RETAIL</p>
+        </div>
+    </div>
+    <div id="What">
+        <section class="flex justify-center items-center h-screen mt-[100px]">
+            <img src="./images/EidtedVideo.png" alt="What We Do" class="w-[90vw] h-[100vh] object-cover">
+        </section>
+    </div>
+    <div class="grid grid-cols-2 gap-24 p-8 ml-[50px] mt-[100px] mr-[50px] mb-[200px]">
+        <div class="col-span-1">
+            <img src="./images/Curves12.png" alt="">
+            <!-- <p class="mt-[40px] text-center text">RESIDENTIAL</p> -->
+        </div>
+        <div class="col-span-1">
+            <img src="./images/Hue_Saturation25.png" alt="">
+            <!-- <p class="mt-[40px] text-center text">CORPORATE</p> -->
+        </div>
+        <div class="col-span-1">
+            <img src="./images/art-gallery-with-paintings-wooden-benches.png" alt="">
+            <!-- <p class="mt-[40px] text-center text">HOSPITALITY</p> -->
+        </div>
+        <div class="col-span-1">
+            <img src="./images/luxurious-bathroom-with-gold-embellishments.png" alt="">
+            <!-- <p class="mt-[40px] text-center text">RETAIL</p> -->
+        </div>
+    </div>
+
+    <footer class="justify-center items-center h-screen bg-black text-white">
+        <div class="grid grid-cols-5 gap-4 p-8 text-center">
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2">PHONE</h3>
+                <ul>
+                    <li><a href="#">+971589653760</a></li>
+                </ul>
+            </div>
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2">E-MAIL</h3>
+                <ul>
+                    <li><a href="#">info@marsspace.ae</a></li>
+                </ul>
+            </div>
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2 text-justify">LOCATION</h3>
+                <ul>
+                    <li>
+                        <p class="text-justify">GF-24, AL Safiya building, <br> Dubai, UAE</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2 text-justify">SERVICES</h3>
+                <ul>
+                    <li><a href="#"><p class="text-justify">FIT-OUT Contractor</p></a></li>
+                    <li><a href="#"><p class="text-justify">Interior Design</p></a></li>
+                    <li><a href="#"><p class="text-justify">Construction Contract</p></a></li>
+                </ul>
+                <div class="mt-[50px]">
+                    <h3 class="text-xl font-semibold mb-2 text-justify">PRODUCT</h3>
+                    <ul>
+                        <li><a href="#"><p class="text-justify">Branding</p></a></li>
+                        <li><a href="#"><p class="text-justify">Packging Design</p></a></li>
+                        <li><a href="#"><p class="text-justify">3D Visualization</p></a></li>
+                        <li><a href="#"><p class="text-justify">Animation</p></a></li>
+                        <li><a href="#"><p class="text-justify">More</p></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="mt-[100px]">
+                <h3 class="text-xl font-semibold mb-2">GET SOCIAL</h3>
+                <ul class="flex justify-center space-x-4">
+                    <li><a href="#"><img src="./images/instagram.png" alt="" class="w-8"></a></li>
+                    <li><a href="#"><img src="./images/facebook.png" alt="" class="w-8"></a></li>
+                    <li><a href="#"><img src="./images/whatsapp.png" alt="" class="w-8"></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
