@@ -19,6 +19,10 @@
             font-family: 'EurostileBQ';
             src: url('./font/EurostileBQ-Extended.otf') format('opentype');
         }
+        @font-face {
+            font-family: 'FuturaBK';
+            src: url('./font/FuturaBkBTBook.ttf') format('truetype');
+        }
         body {
             font-family: 'Deradioh' !important;
             /* background-image: url('./images/PROJECT.jpg'); */
@@ -153,20 +157,23 @@
         <div>
             <section class="flex justify-center items-center h-screen">
                 <div class="flex flex-1 flex-col items-start p-8 mt-[150px] ml-[100px]">
-                    <h2 class="text-4xl font-light">SOME WHO</h2>
-                    <h2 class="text-4xl font-light">BUILD BEYOND</h2>
-                    <p class="max-w-md mt-4 text-lg text-justify">At Mars Space Interior, we don't just design spaces we craft experiences that go beyond expectations. With innovation, precision, and a deep understanding of aesthetics and functionlity, we create interiors that inspire.</p>
-                    <button id="btn" class="mt-6 px-6 py-3 w-[250px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg">
+                    <h2 class="text-7xl font-light mt-[-70px]">SOME WHO BUILD</h2>
+                    <h2 class="text-7xl font-light">BEYOND</h2>
+                    <p class="mt-4 text-2xl" style="font-family: FuturaBK !important;">At Mars Space Interior, we don't just design spaces we craft experiences <br>
+                         that go beyond expectations. With innovation, precision, and a deep understanding of aesthetics.</p>  
+                         <!-- and functionlity, we create <br> interiors that inspire. -->
+                    <button class="mt-6 px-6 py-3 w-[230px] bg-white text-black font-medium uppercase tracking-widest mt-[100px] shadow-lg hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
                         SCHEDULE A CALL
                     </button>
                 </div>
-                <div class="flex-1 h-screen mt-[250px]">
-                    <img src="./images/01ForegroundImage.png" alt="What We Do" class="w-[600px] h-[500px] object-cover mr-[500px] mt-[100px]">
+                <div class="flex-1 h-screen mt-[250px] overflow-hidden">
+                    <img src="./images/01ForegroundImage.png" alt="What We Do" 
+                        class="w-[600px] h-[500px] object-cover mr-[500px] mt-[100px] transition-transform duration-300 hover:scale-110">
                 </div>
             </section>
         </div>
     </div>
-    <h2 class="text-8xl text-center mb-[-50px]">GCC Exchange</h2>
+    <h2 class="text-8xl text-center mb-[-60px]">GCC Exchange</h2>
     <div class="grid grid-cols-3 gap-3 p-8 ml-[50px] mt-[100px] mr-[50px]">
         <div class="col-span-1">
             <img src="./images/gcc-image-1.png" alt="">
@@ -187,8 +194,8 @@
     </div>
     <div class="grid grid-cols-1 gap-8 p-8 ml-[50px] mt-[50px] mr-[50px]">
         <div class="col-span-1">
-            <p class="text-2xl text-justify">
-                GCC Exchange is a fast-growing Money Transfer and Foreign Exchange brand for individuals and businesses. <br>
+            <p class="text-3xl text-center mt-[-10px]" style="font-family: FuturaBK !important;">
+                GCC Exchange is a fast-growing Money Transfer and Foreign Exchange brand for individuals and businesses<br>
                 We have grown from our first branch in Dubai - U.A.E. to a total of twenty four branches in the U.A.E.
             </p>
         </div>
@@ -201,7 +208,7 @@
             </h3>
         </div>
     </div>
-    <div class="grid grid-cols-3 gap-4 p-8 ml-[50px] mt-[50px] mr-[50px]">
+    <div class="grid grid-cols-3 gap-4 p-8 ml-[50px] mt-[20px] mr-[50px]">
         <div class="col-span1">
             <img src="./images/Curves-13-2.png" alt="">
         </div>
@@ -214,7 +221,7 @@
     </div>
     <div class="grid grid-cols-1 gap-8 p-8 ml-[50px] mt-[30px] mr-[50px] mb-[20px]">
         <div class="col-span-1">
-            <p class="text-2xl text-center">
+            <p class="text-3xl text-center mt-[-10px] mb-[100px]" style="font-family: FuturaBK !important;">
                 ONÓRA Real Estate is a Dubai-based real estate agency focused on assisting clients in exploring <br>
                 Dubai's off-plan property market and providing a comprehensive real estate experience.
             </p>
@@ -287,7 +294,7 @@
             <div class="mt-[100px]">
                 <h3 class="text-xl font-semibold mb-2">GET SOCIAL</h3>
                 <ul class="flex justify-center space-x-4">
-                    <li><a href="#"><img src="./images/instagram.png" alt="" class="w-8"></a></li>
+                    <li><a href="https://www.instagram.com/marspaceinteriors/?hl=en" target="_blank"><img src="./images/instagram.png" alt="" class="w-8"></a></li>
                     <li><a href="#"><img src="./images/facebook.png" alt="" class="w-8"></a></li>
                     <li><a href="#"><img src="./images/whatsapp.png" alt="" class="w-8"></a></li>
                 </ul>
