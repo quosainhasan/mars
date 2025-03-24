@@ -19,11 +19,21 @@
             font-family: 'EurostileBQ';
             src: url('./font/EurostileBQ-Extended.otf') format('opentype');
         }
+        @font-face {
+            font-family: 'FuturaBK';
+            src: url('./font/FuturaBkBTBook.ttf') format('truetype');
+        }
         body {
             font-family: 'Deradioh' !important;
         }
         p{
             font-family: 'EurostileBQ' !important;
+        }
+        #textForP{
+            font-family: 'FuturaBK' !important;
+            font-size: 25px;
+            font-weight: 100;
+            color: #fcfad8;
         }
         #main {
             background-image: url('./images/servicesPageBG.png'); /* Replace with your actual image */
@@ -186,16 +196,16 @@
         <div>
             <section class="flex justify-center items-center h-screen">
                 <div class="flex flex-1 flex-col items-start p-8 mt-[150px] ml-[100px]">
-                    <h2 class="text-4xl font-light">INTERIOR DESIGN</h2>
-                    <h4 class="text-2xl text-center mt-8 mb-4 bg-black bg-opacity-50 w-[250px]">CONCEPT DESIGN</h4>
-                    <p>Indulge in the elegance of our bespoke interior</p>
-                    <p>design services, tailored to elevate your space</p>
-                    <h4 class="text-2xl text-center mt-8 mb-4 bg-black bg-opacity-50 w-[250px]">SCHEMTIC DESIGN</h4>
-                    <p>Indulge in the elegance of our bespoke interior</p>
-                    <p>design services, tailored to elevate your space</p>
-                    <h4 class="text-2xl text-center mt-8 mb-4 bg-black bg-opacity-50 w-[250px]">3D VISUALIZATION</h4>
-                    <p>Indulge in the elegance of our bespoke interior</p>
-                    <p>design services, tailored to elevate your space</p>
+                    <h2 class="text-7xl font-light">INTERIOR DESIGN</h2>
+                    <h4 class="text-4xl text-center mt-8 mb-4 bg-black bg-opacity-50 w-[350px]">CONCEPT DESIGN</h4>
+                    <p style="font-family: FuturaBK !important;" class="text-2xl">Indulge in the elegance of our bespoke interior design services, tailored to elevate your space</p>
+                    <!-- <p style="font-family: FuturaBK !important;" class="text-2xl">design services, tailored to elevate your space</p> -->
+                    <h4 class="text-4xl text-center mt-8 mb-4 bg-black bg-opacity-50 w-[350px]">SCHEMTIC DESIGN</h4>
+                    <p style="font-family: FuturaBK !important;" class="text-2xl">Indulge in the elegance of our bespoke interior design services, tailored to elevate your space</p>
+                    <!-- <p style="font-family: FuturaBK !important;">design services, tailored to elevate your space</p> -->
+                    <h4 class="text-4xl text-center mt-8 mb-4 bg-black bg-opacity-50 w-[350px]">3D VISUALIZATION</h4>
+                    <p style="font-family: FuturaBK !important;" class="text-2xl">Indulge in the elegance of our bespoke interior design services, tailored to elevate your space</p>
+                    <!-- <p style="font-family: FuturaBK !important;">design services, tailored to elevate your space</p> -->
                 </div>
                 <!-- <div class="flex-1 h-screen mt-[250px]">
                     <img src="./images/ServicesPageFG.png" alt="What We Do" class="w-[3500px] h-[600px] object-cover">
@@ -208,10 +218,10 @@
     <div id="What">
         <section class="flex justify-center items-center h-screen">
             <div class="flex flex-1 flex-col items-start p-8 ml-[100px]">
-            <h2 class="text-4xl font-light">INTERIOR FITOUT</h2>
-            <p class="mt-4 text-lg">Experience the pinnacle of craftsmanship and</p>
-            <p class="text-lg">sophistication with our bespoke interior fit-out services,</p>
-            <p class="text-lg">crafted to enhance retail businesses and other spaces</p>
+            <h2 class="text-7xl font-light mt-[-50px]">INTERIOR FITOUT</h2>
+            <p class="mt-4 text-2xl" style="font-family: FuturaBK !important;">Experience the pinnacle of craftsmanship and
+            sophistication <br> with our bespoke interior fit-out services,
+            crafted to enhance <br> retail businesses and other spaces</p>
             <!-- <button id="btn" class="mt-6 px-6 py-3 w-[250px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg">
                 SCHEDULE A CALL
             </button> -->
@@ -224,11 +234,11 @@
     <div id="Partners">
         <section class="flex justify-center items-center h-screen">
             <div class="flex flex-1 flex-col items-start p-8 ml-[100px]">
-                <h2 class="text-4xl font-light">HOW WE BUILD FROM</h2>
-                <h2 class="text-4xl font-light">SCRATCH TO DELHIVERY</h2>
-                <p class="mt-4 text-lg">This end-to-end process ensures that Mars Space Interior</p>
-                <p class="text-lg">delivers the high-quality construction projects that meet client</p>
-                <p class="text-lg"> expectations and comply with UAE regulations.</p>
+                <h2 class="text-7xl font-light mt-[-303px]">HOW WE BUILD FROM</h2>
+                <h2 class="text-[62px] font-light">SCRATCH TO DELHIVERY</h2>
+                <p class="mt-4 text-2xl" style="font-family: FuturaBK !important;">This end-to-end process ensures that Mars Space Interior delivers</p>
+                <p class="text-2xl" style="font-family: FuturaBK !important;">the high-quality construction projects that meet client expectations</p>
+                <p class="text-2xl" style="font-family: FuturaBK !important;">and comply with UAE regulations.</p>
                 <!-- <button id="btn" class="mt-6 px-6 py-3 w-[200px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg">
                     SCHDULE A CALL
                 </button> -->
@@ -303,33 +313,33 @@
     <footer class="justify-center items-center h-screen bg-black text-white">
         <div class="grid grid-cols-5 gap-4 p-8 text-center">
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2">PHONE</h3>
+                <h3 class="text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8]">PHONE</h3>
                 <ul>
-                    <li><a href="#">+971589653760</a></li>
+                    <li><a href="#" id="textForP" style="font-size: 20px;" class="text-justify">+971589653760</a></li>
                 </ul>
             </div>
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2">E-MAIL</h3>
+                <h3 class="text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8]">E-MAIL</h3>
                 <ul>
-                    <li><a href="#">info@marsspace.ae</a></li>
+                    <li><a href="#" id="textForP" style="font-size: 20px;">info@marsspace.ae</a></li>
                 </ul>
             </div>
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2 text-justify">LOCATION</h3>
+                <h3 class="text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">LOCATION</h3>
                 <ul>
                     <li>
-                        <p class="text-justify">GF-24, AL Safiya building, <br> Dubai, UAE</p>
+                        <p class="text-justify" id="textForP" style="font-size: 20px;">GF-24, AL Safiya building, <br> Dubai, UAE</p>
                     </li>
                 </ul>
             </div>
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2 text-justify">SERVICES</h3>
+                <h3 class="text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">SERVICES</h3>
                 <ul>
-                    <li><a href="#"><p class="text-justify">FIT-OUT Contractor</p></a></li>
-                    <li><a href="#"><p class="text-justify">Interior Design</p></a></li>
-                    <li><a href="#"><p class="text-justify">Construction Contract</p></a></li>
+                    <li><a href="#"><p class="text-justify" id="textForP" style="font-size: 20px;">FIT-OUT Contractor</p></a></li>
+                    <li><a href="#"><p class="text-justify" id="textForP" style="font-size: 20px;">Interior Design</p></a></li>
+                    <li><a href="#"><p class="text-justify" id="textForP" style="font-size: 20px;">Construction Contract</p></a></li>
                 </ul>
-                <div class="mt-[50px]">
+                <!-- <div class="mt-[50px]">
                     <h3 class="text-xl font-semibold mb-2 text-justify">PRODUCT</h3>
                     <ul>
                         <li><a href="#"><p class="text-justify">Branding</p></a></li>
@@ -338,10 +348,10 @@
                         <li><a href="#"><p class="text-justify">Animation</p></a></li>
                         <li><a href="#"><p class="text-justify">More</p></a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2">GET SOCIAL</h3>
+                <h3 class="text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8]">GET SOCIAL</h3>
                 <ul class="flex justify-center space-x-4">
                     <li><a href="#"><img src="./images/instagram.png" alt="" class="w-8"></a></li>
                     <li><a href="#"><img src="./images/facebook.png" alt="" class="w-8"></a></li>

@@ -157,6 +157,16 @@
             font-weight: 100;
             color: #fcfad8;
         }
+
+        .mouse-icon {
+            opacity: 0.8;
+            animation: mouse-scroll 1.5s infinite;
+        }
+        @keyframes mouse-scroll {
+            0% { transform: translateY(0); opacity: 0.8; }
+            50% { transform: translateY(10px); opacity: 0.4; }
+            100% { transform: translateY(0); opacity: 0.8; }
+        }
     </style>
 </head>
 <body class="text-white font-sans">
@@ -199,12 +209,36 @@
             </nav>
         </header>
         
-        <main class="flex flex-col justify-center h-screen px-16 ml-[220px]">
-            <h1 class="text-9xl font-light" id="textForE">MARS</h1>
-            <p class="max-w-md mt-4 text-lg" id="textForP">At Mars Space Interiors, we design visionary, sustainable spaces that redefine living.</p>
-            <button id="btn" class="mt-6 px-6 py-3 w-[246px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg mt-[216px]">
+        <main class="flex flex-col justify-center h-screen px-16 ml-[250px]">
+            <h1 class="text-9xl font-light mt-[200px]" id="textForE">MARS</h1>
+            <p class="mt-4 text-lg" id="textForP">At Mars Space Interiors, we design visionary, <br> sustainable spaces that redefine living.</p>
+            <!-- <img src="./svg/butonMain.svg" alt="" width="195px" height="10px" class="mt-[100px]"> -->
+            <button class="mt-6 px-6 py-3 w-[230px] bg-white text-black font-medium uppercase tracking-widest shadow-lg mt-[216px]  hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
                 Schedule A Call
             </button>
+            <div class="flex justify-center w-full ml-[-100px] mt-[100px]">
+                <img src="./svg/Asset-101.svg" alt="" width="30px" class="mt-4 mouse-icon">
+            </div>
+            <!-- <svg>
+                <defs>
+                    <style>
+                        .mouse-icon {
+                            opacity: 0.8;
+                            animation: mouse-scroll 1.5s infinite;
+                        }
+                        @keyframes mouse-scroll {
+                            0% { transform: translateY(0); opacity: 0.8; }
+                            50% { transform: translateY(10px); opacity: 0.4; }
+                            100% { transform: translateY(0); opacity: 0.8; }
+                        }
+                    </style>
+                </defs>
+                <g class="mouse-icon">
+                    <path fill="#ffffff" d="M12,5 L12,19" stroke="#ffffff" stroke-width="2"/>
+                    <path fill="#ffffff" d="M12,2 C14.7614,2 17,4.23858 17,7 L17,13 C17,15.7614 14.7614,18 12,18 C9.23858,18 7,15.7614 7,13 L7,7 C7,4.23858 9.23858,2 12,2 Z" stroke="#ffffff" stroke-width="2"/>
+                    <path fill="#ffffff" d="M12,16 L8,12 L16,12 L12,16 Z" stroke="#ffffff"/>
+                </g>
+            </svg> -->
             <!-- <button class="relative px-6 py-3 w-[246px] bg-white text-[#623A21] font-semibold uppercase tracking-wide shadow-lg 
                 before:absolute before:top-0 before:right-0 before:w-4 before:h-full before:bg-white 
                 before:skew-x-[-10deg] before:origin-bottom-right before:z-[-1]">
@@ -227,10 +261,13 @@
         <section class="flex justify-center items-center h-screen">
             <div class="flex flex-1 flex-col items-start p-8 mt-[-150px] ml-[100px]">
             <h2 class="text-[70px] font-light" style="color: #fcfad8;">What We Offer</h2>
-            <p class="max-w-md mt-4 text-lg" id="textForP">Crafting innovative and personalized interiors that inspire and elevate everyday living.</p>
-            <button id="btn" class="mt-6 px-6 py-3 w-[200px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg mt-[216px]">
-                Read More
-            </button>
+            <p class="mt-4 text-lg" id="textForP">Crafting innovative and personalized interiors that <br> inspire and elevate everyday living.</p>
+            <a href="./services.html">
+
+                <button class="mt-6 px-6 py-3 w-[230px] bg-white text-black font-medium uppercase tracking-widest shadow-lg mt-[216px]  hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
+                    Read More
+                </button>
+            </a>
             </div>
             <!-- <div class="flex-1 h-screen">
                 <img src="./images/WHATWE.png" alt="What We Do" class="w-[3500px] h-full object-cover">
@@ -320,18 +357,18 @@
     </div>
     <div id="Partners">
         <section class="flex justify-center items-center h-screen">
-            <div class="flex flex-1 flex-col items-start p-8 mt-[100px] ml-[100px]">
+            <div class="flex flex-1 flex-col items-start p-8 mt-[-250px] ml-[100px]">
                 <h2 class="text-[70px] font-light" style="color: #fcfad8;">Why Us?</h2>
-                <p class="max-w-md mt-4 text-lg" id="textForP">
-                    CertifiedExcellence: We are proudly certified by UAE <br>
-                    government authorities, including DEWA, Dubai Muncipality <br>
-                    (DCM), and Civil Defence, ensuring our compliance with the <br>
+                <p class="mt-4 text-lg leading-8" id="textForP">
+                    CertifiedExcellence: We are proudly certified by UAE government authorities,<br>
+                    including DEWA, Dubai Muncipality
+                    (DCM), and Civil Defence, ensuring our compliance with the
                     highest industry standards.
                 </p>
-                <button id="btn" class="mt-6 px-6 py-3 w-[200px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg">
+                <!-- <button id="btn" class="mt-6 px-6 py-3 w-[200px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg mt-[100px]">
                     Read More
-                </button>
-                <div class="mt-[150px]">
+                </button> -->
+                <!-- <div class="mt-[150px]">
                     <div class="flex flex-row bg-black bg-opacity-60 p-4 space-x-4 w-[459px]">
                         <div class="border-r border-white pr-4">
                             <h6>DCD</h6>
@@ -352,7 +389,7 @@
                             <h6>FEWA</h6>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="flex-1">
                 <img src="./images/partnersforeground.png" alt="Partners" id="partnersImage">
@@ -361,22 +398,25 @@
     </div>
     <div id="Projects">
         <section class="flex justify-center items-center h-screen">
-            <div class="flex flex-1 flex-col items-start p-8 mt-[150px] ml-[100px]">
-                <h2 class="text-4xl font-light">
-                    Seamless and <br>
+            <div class="flex flex-1 flex-col items-start p-8 mt-[50px] ml-[100px]">
+                <h2 class="text-6xl font-light text-[#fcfad8]">
+                    Seamless and
                     high-quality execution
 
                 </h2>
-                <p class="mt-4 text-lg">
-                    At MSC, we take a approach to interior design, managing<br>
-                    every project from concept to completion with precision<br>
-                    and creativity. Our process begins with understanding<br>
+                <p class="mt-4 text-lg" id="textForP">
+                    At MSC, we take a approach to interior design, managing
+                    every project from concept to completion with precision
+                    and creativity. Our process begins with understanding
                     your vision, requirements, and space dynamics.
                 </p>
-                <button id="btn" class="mt-6 px-6 py-3 w-[200px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg">
-                    View Projects
-                </button>
-                <div class="mt-[150px]">
+                <a href="./project.html">
+
+                    <button class="mt-6 px-6 py-3 w-[230px] bg-white text-black font-medium uppercase tracking-widest shadow-lg mt-[216px]  hover:bg-[#dd780b] hover:text-white hover:shadow-[0_0_25px_rgba(255,180,0,0.8)] transition-all duration-300 hover:scale-105 hover:glow-gold">
+                        View Projects
+                    </button>
+                </a>
+                <!-- <div class="mt-[150px]">
                     <div class="flex flex-row bg-black bg-opacity-60 p-4 space-x-4 w-[459px]">
                         <div class="border-r border-white pr-4">
                             <h6>DCD</h6>
@@ -397,7 +437,7 @@
                             <h6>FEWA</h6>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="flex-1">
                 <img src="./images/bed-room.png" alt="Partners" id="projectFg">
@@ -427,33 +467,33 @@
     <footer class="justify-center items-center h-screen bg-black text-white">
         <div class="grid grid-cols-5 gap-4 p-8 text-center">
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2">PHONE</h3>
+                <h3 class="text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8]">PHONE</h3>
                 <ul>
-                    <li><a href="#">+971589653760</a></li>
+                    <li><a href="#" id="textForP" style="font-size: 20px;" class="text-justify">+971589653760</a></li>
                 </ul>
             </div>
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2">E-MAIL</h3>
+                <h3 class="text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8]">E-MAIL</h3>
                 <ul>
-                    <li><a href="#">info@marsspace.ae</a></li>
+                    <li><a href="#" id="textForP" style="font-size: 20px;">info@marsspace.ae</a></li>
                 </ul>
             </div>
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2 text-justify">LOCATION</h3>
+                <h3 class="text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">LOCATION</h3>
                 <ul>
                     <li>
-                        <p class="text-justify">GF-24, AL Safiya building, <br> Dubai, UAE</p>
+                        <p class="text-justify" id="textForP" style="font-size: 20px;">GF-24, AL Safiya building, <br> Dubai, UAE</p>
                     </li>
                 </ul>
             </div>
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2 text-justify">SERVICES</h3>
+                <h3 class="text-xl font-semibold mb-2 text-justify tracking-[4px] text-[#fcfad8]">SERVICES</h3>
                 <ul>
-                    <li><a href="#"><p class="text-justify">FIT-OUT Contractor</p></a></li>
-                    <li><a href="#"><p class="text-justify">Interior Design</p></a></li>
-                    <li><a href="#"><p class="text-justify">Construction Contract</p></a></li>
+                    <li><a href="#"><p class="text-justify" id="textForP" style="font-size: 20px;">FIT-OUT Contractor</p></a></li>
+                    <li><a href="#"><p class="text-justify" id="textForP" style="font-size: 20px;">Interior Design</p></a></li>
+                    <li><a href="#"><p class="text-justify" id="textForP" style="font-size: 20px;">Construction Contract</p></a></li>
                 </ul>
-                <div class="mt-[50px]">
+                <!-- <div class="mt-[50px]">
                     <h3 class="text-xl font-semibold mb-2 text-justify">PRODUCT</h3>
                     <ul>
                         <li><a href="#"><p class="text-justify">Branding</p></a></li>
@@ -462,10 +502,10 @@
                         <li><a href="#"><p class="text-justify">Animation</p></a></li>
                         <li><a href="#"><p class="text-justify">More</p></a></li>
                     </ul>
-                </div>
+                </div> -->
             </div>
             <div class="mt-[100px]">
-                <h3 class="text-xl font-semibold mb-2">GET SOCIAL</h3>
+                <h3 class="text-xl font-semibold mb-2 tracking-[4px] text-[#fcfad8]">GET SOCIAL</h3>
                 <ul class="flex justify-center space-x-4">
                     <li><a href="#"><img src="./images/instagram.png" alt="" class="w-8"></a></li>
                     <li><a href="#"><img src="./images/facebook.png" alt="" class="w-8"></a></li>
