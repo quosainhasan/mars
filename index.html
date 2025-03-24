@@ -120,6 +120,13 @@
             background-size: 100% 100%; /* Reduced width */
             height: 100vh;
         }
+        #gov{
+            background-image: url('./images/UAE-GOVT-APPROVEL-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
         .text {
             transform: translateX(-50%);
             font-weight: bold;
@@ -393,6 +400,70 @@
             </div>
             <div class="flex-1">
                 <img src="./images/partnersforeground.png" alt="Partners" id="partnersImage">
+            </div>
+        </section>
+    </div>
+    <div id="gov">
+        <section class="flex justify-center items-center h-screen">
+            <div class="flex flex-1 flex-col items-start p-8 mt-[-100px] ml-[100px]">
+                <h2 class="text-[70px] font-light" style="color: #fcfad8;">Approved By UAE Government</h2>
+                <p class="mt-4 text-lg leading-8" id="textForP">
+                    From luxury residential spaces to high-end commercial projects,
+                    our expertise <br> lies in transforming visions into reality. Certified
+                    by UAE authorities, we uphold <br> the highest standards of craftsmanship,
+                    ensuring that every detail reflects excellence.
+                </p>
+                <!-- <button id="btn" class="mt-6 px-6 py-3 w-[200px] bg-white text-black font-medium uppercase tracking-widest rounded shadow-lg mt-[100px]">
+                    Read More
+                </button> -->
+                <div class="mt-[150px] relative w-[600px] overflow-hidden">
+                    <div class="carousel-container flex transition-transform duration-500" id="carousel">
+                        <!-- Slide 1 -->
+                        <div class="min-w-full grid grid-cols-3 gap-8">
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-11aa.svg" alt="DCD" class="w-[50px] object-contain">
+                            </div>
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-31aa.svg" alt="DM" class="w-[500px] object-contain">
+                            </div>
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-41aa.svg" alt="DEWA" class="w-[50px] object-contain">
+                            </div>
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="min-w-full grid grid-cols-3 gap-8">
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-91aa.svg" alt="SEWA" class="w-[50px] object-contain">
+                            </div>
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-71aa.svg" alt="TRAKHEES" class="w-[500px] mt-[50px] object-contain">
+                            </div>
+                            <div class="flex items-center justify-center p-4 bg-[#fcfad8] rounded-lg">
+                                <img src="./svg/Asset-61aa.svg" alt="FEWA" class="h-16 object-contain">
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Navigation buttons -->
+                    <button class="absolute left-0 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 text-white" onclick="moveCarousel(-1)">❮</button>
+                    <button class="absolute right-0 top-1/2 transform -translate-y-1/2 bg-black/50 p-2 text-white" onclick="moveCarousel(1)">❯</button>
+                </div>
+
+                <script>
+                    let currentSlide = 0;
+                    const carousel = document.getElementById('carousel');
+
+                    function moveCarousel(direction) {
+                        const slides = document.querySelectorAll('.carousel-container > div');
+                        currentSlide = (currentSlide + direction + slides.length) % slides.length;
+                        carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+                    }
+
+                    // Auto-advance every 3 seconds
+                    setInterval(() => moveCarousel(1), 3000);
+                </script>
+            </div>
+            <div class="flex-1">
+                <img src="./images/Asset-801.png" alt="Partners" class="w-[800px]">
             </div>
         </section>
     </div>
